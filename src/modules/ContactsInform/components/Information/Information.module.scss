@@ -1,0 +1,158 @@
+@use "shared/styles/placeholders";
+@use "shared/styles/variables" as var;
+@use "shared/styles/functions" as fn;
+@use "shared/styles/mixins";
+
+.sidebar {
+    @include mixins.set-border-radius("large");
+    @include mixins.ease("medium", "max-height");
+
+    position: relative;
+    background-color: fn.get-color("eerie-black-2");
+    border: 1px solid fn.get-color("jet");
+    overflow: hidden;
+    max-height: 112px;
+    box-shadow: fn.get-color("shadow-1");
+
+    padding: 15px;
+    margin-bottom: 15px;
+
+    @include mixins.media("tablet") {
+        width: 700px;
+        max-height: 180px;
+
+        padding: 30px;
+        margin-inline: auto;
+        margin-bottom: 30px;
+    }
+    @include mixins.media("addsize") {
+        width: 950px;
+        box-shadow: fn.get-color("shadow-5");
+    }
+
+    @include mixins.media("desktop") {
+        width: 275px;
+        position: sticky;
+        top: 60px;
+        max-height: max-content;
+        height: 100%;
+        margin-bottom: 0;
+        padding: 20px;
+        padding-top: 60px;
+        z-index: 1;
+    }
+
+    &.active {
+        max-height: 410px;
+
+        @include mixins.media("tablet") {
+            max-height: 584px;
+        }
+        @include mixins.media("desktop") {
+            max-height: max-content;
+        }
+    }
+
+    &.collapsing {
+        max-height: 112px;
+
+        @include mixins.media("tablet") {
+            max-height: 180px;
+        }
+        @include mixins.media("desktop") {
+            max-height: max-content;
+            height: 100%;
+        }
+    }
+}
+
+.showMore {
+    @include mixins.ease("slow", "background");
+
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border-radius: 0 15px;
+    color: fn.get-color("orange-yellow-crayola");
+    background: fn.get-color("border-gradient-onyx");
+    border: 1px solid fn.get-color("transparent");
+    overflow: hidden;
+    padding: 7px;
+    box-shadow: fn.get-color("shadow-2");
+    z-index: 1;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background: fn.get-color("bg-gradient-yellow-1");
+
+        .showMoreText {
+            color: fn.get-color("white-1");
+        }
+    }
+
+    @include mixins.media("tablet") {
+        padding: 10px 15px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        inset: 1px;
+        border-radius: inherit;
+        background: var.$bg-gradient-jet;
+    }
+
+    &:hover::before,
+    &:active::before,
+    &:focus::before {
+        background: var.$bg-gradient-yellow-2;
+    }
+
+    .arrow {
+        @include mixins.ease("medium", "rotate", "stroke");
+
+        display: block;
+        position: relative;
+        z-index: 2;
+        stroke: fn.get-color("orange-yellow-crayola");
+        fill: fn.get-color("transparent");
+        rotate: 0deg;
+
+        &:hover,
+        &:active,
+        &:focus {
+            stroke: fn.get-color("white-1");
+        }
+
+        &.animationArrow {
+            rotate: 180deg;
+        }
+    }
+
+    .showMoreText {
+        @include mixins.ease("medium", "color");
+        @extend %show-more;
+
+        position: relative;
+        z-index: 2;
+    }
+
+    @include mixins.media("desktop") {
+        display: none;
+    }
+}
+
+.content {
+    @include mixins.ease("fast", "opacity");
+    opacity: 0;
+
+    &.visible {
+        opacity: 1;
+    }
+
+    &.hidden {
+        opacity: 0;
+    }
+}

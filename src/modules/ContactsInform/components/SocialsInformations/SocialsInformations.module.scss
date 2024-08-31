@@ -1,0 +1,57 @@
+@use "shared/styles/placeholders";
+@use "shared/styles/variables" as var;
+@use "shared/styles/functions" as fn;
+@use "shared/styles/mixins";
+
+.socialList {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.thumbIcon {
+    @include mixins.ease("medium", "transform");
+    position: relative;
+    background: fn.get-color("border-gradient-onyx");
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: fn.get-color("shadow-1");
+    z-index: 1;
+    cursor: pointer;
+
+    &:hover,
+    &:active,
+    &:focus {
+        transform: scale(1.1);
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 1px;
+        background: fn.get-color("eerie-black-1");
+        border-radius: inherit;
+        z-index: -1;
+    }
+
+    @include mixins.media("tablet") {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+    }
+}
+
+.iconSocial {
+    display: block;
+    stroke: fn.get-color("orange-yellow-crayola");
+    fill: fn.get-color("transparent");
+
+    @include mixins.media("tablet") {
+        width: 22px;
+        height: 22px;
+    }
+}

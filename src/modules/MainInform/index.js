@@ -1,0 +1,13 @@
+export { default as GeneralInform } from './components/GeneralInform/GeneralInform';
+export { default as Header } from './components/Header/Header';
+export { default as AboutMe } from './components/AboutMe/AboutMe';
+export { default as WhatImDoing } from './components/WhatImDoing/WhatImDoing';
+export { default as Recommendation } from './components/Recommendation/Recommendation';
+export { default as DetailInform } from './components/DetailInform/DetailInform';
+export { default as BlogComponent } from './components/BlogComponent/BlogComponent';
+export { default as Education } from './components/Education/Education';
+export { default as Experience } from './components/Experience/Experience';
+export { default as MySkills } from './components/MySkills/MySkills';
+export { default as ResumeComponent } from './components/ResumeComponent/ResumeComponent';
+export { default as PortfolioComponents } from './components/PortfolioComponents/PortfolioComponents';
+export { default as PortfolioList } from './components/PortfolioList/PortfolioList';
