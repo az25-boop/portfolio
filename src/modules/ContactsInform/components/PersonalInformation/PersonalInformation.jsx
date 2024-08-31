@@ -19,7 +19,7 @@ const PersonalInformation = () => {
         </picture>
       </div>
       <div>
-        <h2 className={style.name}>Hranovska Krystyna</h2>
+        <h2 className={style.name}>Melnik Pavle</h2>
         <p className={style.position}>FrontEnd developer</p>
         <a
           className={`${style.downloadCV} ${style.position}`}

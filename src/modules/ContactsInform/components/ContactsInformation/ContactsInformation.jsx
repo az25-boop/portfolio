@@ -18,7 +18,7 @@ const ContactsInformation = () => {
               href="mailto:kr.hranovska@gmail.com"
               className={style.contactInform}
             >
-              kr.hranovska@gmail.com
+              bratrostislav@gmail.com
             </a>
           </div>
         </li>
@@ -31,8 +31,8 @@ const ContactsInformation = () => {
           </div>
           <div>
             <h2 className={style.titleContact}>Phone</h2>
-            <a href="tel:+380500833605" className={style.contactInform}>
-              +38 (050) 083-36-05
+            <a href="tel:+38097*******" className={style.contactInform}>
+              +38 (097) 083-36-05
             </a>
           </div>
         </li>

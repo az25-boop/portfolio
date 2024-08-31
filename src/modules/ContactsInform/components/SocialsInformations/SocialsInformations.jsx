@@ -15,7 +15,7 @@ const SocialsInformations = () => {
 
         <li className={style.thumbIcon}>
           <a
-            href="https://www.linkedin.com/in/krystyna-hranovska/"
+            href="https://www.linkedin.com/in/pavel-melnik-475608300"
             target="_blank"
           >
             <svg className={`${style.iconSocial}`} width="18" height="18">
@@ -25,10 +25,7 @@ const SocialsInformations = () => {
         </li>
 
         <li className={style.thumbIcon}>
-          <a
-            href="https://www.instagram.com/kristina.granowskay/"
-            target="_blank"
-          >
+          <a href="https://www.instagram.com/" target="_blank">
             <svg className={`${style.iconSocial}`} width="18" height="18">
               <use xlinkHref={`${sprite}#icon-instagram`} />
             </svg>
@@ -36,7 +33,7 @@ const SocialsInformations = () => {
         </li>
 
         <li className={style.thumbIcon}>
-          <a href="https://github.com/KristinaHranovska" target="_blank">
+          <a href="https://github.com/az25-boop" target="_blank">
             <svg className={`${style.iconSocial}`} width="18" height="18">
               <use xlinkHref={`${sprite}#icon-github`} />
             </svg>
