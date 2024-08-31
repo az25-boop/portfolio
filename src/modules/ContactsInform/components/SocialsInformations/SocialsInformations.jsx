@@ -6,7 +6,7 @@ const SocialsInformations = () => {
     <div>
       <ul className={style.socialList}>
         <li className={style.thumbIcon}>
-          <a href="https://t.me/krystyna_hranovska" target="_blank">
+          <a href="https://t.me/pawamiller" target="_blank">
             <svg className={`${style.iconSocial}`} width="18" height="18">
               <use xlinkHref={`${sprite}#icon-telegram`} />
             </svg>
@@ -25,7 +25,7 @@ const SocialsInformations = () => {
         </li>
 
         <li className={style.thumbIcon}>
-          <a href="https://www.instagram.com/" target="_blank">
+          <a href="https://www.facebook.com/gmlppetroff" target="_blank">
             <svg className={`${style.iconSocial}`} width="18" height="18">
               <use xlinkHref={`${sprite}#icon-instagram`} />
             </svg>

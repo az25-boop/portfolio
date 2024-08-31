@@ -32,7 +32,7 @@ const ContactsInformation = () => {
           <div>
             <h2 className={style.titleContact}>Phone</h2>
             <a href="tel:+38097*******" className={style.contactInform}>
-              +38 (097) 083-36-05
+              +38 (097) ***-**-**
             </a>
           </div>
         </li>
@@ -45,7 +45,7 @@ const ContactsInformation = () => {
           </div>
           <div>
             <h2 className={style.titleContact}>Birthday</h2>
-            <p className={style.contactInform}>December 22, 1993</p>
+            <p className={style.contactInform}>December 25, 1978</p>
           </div>
         </li>
 
@@ -57,7 +57,7 @@ const ContactsInformation = () => {
           </div>
           <div>
             <h2 className={style.titleContact}>Location</h2>
-            <p className={style.contactInform}>Dnipro, Ukraine</p>
+            <p className={style.contactInform}>Poltava, Ukraine</p>
           </div>
         </li>
       </ul>
