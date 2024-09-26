@@ -13,7 +13,7 @@ const PersonalInformation = () => {
           <img
             className={style.photo}
             src={imagesPhoto.photo}
-            alt="Girl"
+            alt="Man"
             width="80"
           />
         </picture>
@@ -23,7 +23,7 @@ const PersonalInformation = () => {
         <p className={style.position}>FrontEnd developer</p>
         <a
           className={`${style.downloadCV} ${style.position}`}
-          href="https://drive.google.com/file/d/1D1MkxleBsCCEiXl35I_Fjdn1R-p7HZQU/view?usp=drive_link"
+          href="https://drive.google.com/"
           target="_blank"
         >
           Download CV
