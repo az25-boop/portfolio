@@ -3,7 +3,7 @@ import { imagesPhoto } from 'shared/images';
 const recommendations = [
   {
     id: 1,
-    name: 'Olha Katrych',
+    name: 'Olha',
     position: 'Frontend Developer (HTML5, CSS3, JavaScript, React)',
     link: 'https://www.linkedin.com/',
     img1x: `${imagesPhoto.olha}`,
