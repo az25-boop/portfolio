@@ -13,7 +13,7 @@ const recommendations = [
   },
   {
     id: 2,
-    name: 'Anna',
+    name: 'Ann',
     position: 'Frontend Developer (HTML5, CSS3, JavaScript)',
     link: 'https://www.linkedin.com/',
     img1x: `${imagesPhoto.anna}`,
