@@ -15,7 +15,7 @@ const ContactsInformation = () => {
           <div>
             <h2 className={style.titleContact}>Email</h2>
             <a
-              href="mailto:kr.hranovska@gmail.com"
+              href="mailto:orendapoltava@gmail.com"
               className={style.contactInform}
             >
               bratrostislav@gmail.com
