@@ -26,7 +26,7 @@ const PersonalInformation = () => {
           href="https://drive.google.com/file/d/1HBBnaEL5FbLeacvf1CgyYIOTKzxszK4Y/view?usp=sharing" //https://drive.google.com/
           target="_blank"
         >
-          Download CV
+          Download_CV
         </a>
       </div>
     </div>
